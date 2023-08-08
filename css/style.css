@@ -4,10 +4,13 @@
 }
  
 
-html body{
+html{
     font-family: 'Poppins';
-    height:100%;
-    width:100%;
+}
+
+body{
+    height: 100vh;
+    min-width:100%;
     overflow-x: hidden;
 }
 
@@ -267,6 +270,16 @@ header #logo p{
     position: absolute;
     bottom:457px;
     right:550px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+}
+
+@keyframes spin{
+    from {transform:rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
     
 
@@ -300,6 +313,11 @@ header #logo p{
     position: absolute;
     left:350px;
     top:400px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 .pictures .ellipse2{
@@ -458,7 +476,12 @@ header #logo p{
 #customer img.box{
     position: absolute;
     top:112px;
-    left:780px
+    left:780px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 main #serve #center{
@@ -494,12 +517,22 @@ main #serve #center h2{
     position: absolute;
     left:334px;
     bottom:90px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 .nine{
     position: absolute;
     left:1151px;
     bottom:161px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 
@@ -648,12 +681,22 @@ main #serve #delivery .third p{
     position: absolute;
     left:560px;
     bottom:150px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 #menu .rectangle12{
     position: absolute;
     left:950px;
     bottom:220px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 #items{
@@ -662,12 +705,31 @@ main #serve #delivery .third p{
 
 #list{
     margin-top: 67px;
+    overflow-y: scroll;
+    height: 546px;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 76px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #EB5757;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+
 
 .burger{
     display: flex;
     gap:40px;
-    margin-left: 124px;
+    margin-left: 104px;
 }
 
 .burger img{
@@ -693,7 +755,7 @@ main #serve #delivery .third p{
     width: 254px;
     height: 85px;
     margin-top: 59px;
-    margin-left: 113px;
+    margin-left: 90px;
 }
 
 .pbox img{
@@ -717,7 +779,7 @@ main #serve #delivery .third p{
 .cupcake{
     display: flex;
     gap:29px;
-    margin-left: 135px;
+    margin-left: 105px;
     margin-top: 51px;
 }
 
@@ -735,7 +797,7 @@ main #serve #delivery .third p{
 }
 
 .ramen p{
-    margin-left: 194px;
+    margin-left: 164px;
     margin-top: 100px;
     color: #000;
     font-size: 24px;
@@ -747,7 +809,7 @@ main #serve #delivery .third p{
 .icecream{
     display: flex;
     gap:29px;
-    margin-left: 135px;
+    margin-left: 105px;
     margin-top: 98px;
 }
 
@@ -764,10 +826,6 @@ main #serve #delivery .third p{
     line-height: 22px;
 }
 
-#pole img{
-    margin-top: 23px;
-    margin-left: 90px;
-}
 
 #gradient{
     border-radius: 30px;
@@ -1522,4 +1580,29 @@ footer .footer-base .base{
 .list img{
     margin-left: 70px;
     margin-top: 40px;
+}
+
+@media all and (max-width: 768px){ 
+    body{
+        height: 100vh;
+        min-width:100%;
+        overflow-x: hidden;
+    }
+    
+    
+    #delivery{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-inline: 103px;
+    }
+
+    menu .menu-text p{
+        width: 22px;
+        height: 11px;
+    }
+    #items{
+        display: flex;
+        flex-direction: column;
+    }
 }
