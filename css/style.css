@@ -1582,27 +1582,10 @@ footer .footer-base .base{
     margin-top: 40px;
 }
 
-@media all and (max-width: 768px){ 
-    body{
-        height: 100vh;
-        min-width:100%;
+@media screen and (max-width:1400px){
+    html{
+        height:100%;
+        width:1400px;
         overflow-x: hidden;
+        font-family: 'Poppins'
     }
-    
-    
-    #delivery{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin-inline: 103px;
-    }
-
-    menu .menu-text p{
-        width: 22px;
-        height: 11px;
-    }
-    #items{
-        display: flex;
-        flex-direction: column;
-    }
-}
