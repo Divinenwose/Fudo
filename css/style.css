@@ -1702,7 +1702,7 @@ footer .footer-base .base{
 
 @media screen and (max-width:1400px){
     html{
-        height:100vh;
+        height:100%;
         width:1400px;
         overflow-x: hidden;
         font-family: 'Poppins'
