@@ -5,11 +5,11 @@
  
 
 html{
-    font-family: 'Poppins';
+    height: 100vh;
 }
 
 body{
-    height: 100vh;
+    font-family: 'Poppins';
     min-width:100%;
     overflow-x: hidden;
 }
@@ -37,6 +37,7 @@ body{
     font-weight: 700;
     line-height: 23px;
 }
+
 
 header #logo p{
     color: #000;
@@ -178,6 +179,7 @@ header #logo p{
 #write-up h2{
     width: 594px;
     height: 268px;
+    opacity: 0;
     margin-top: 50px;
     color: #333;
     font-size: 72px;
@@ -185,6 +187,18 @@ header #logo p{
     font-weight: 700;
     line-height: 90px;
     position: relative;
+    animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft{
+   0%{
+    transform: translate(100px);
+    opacity: 0;
+   }
+   100%{
+    transform: translate(0px);
+    opacity: 1;
+   }
 }
 
 .food{
@@ -211,6 +225,9 @@ header #logo p{
     font-weight: 500;
     line-height: 30px;
     margin-top: 25px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 1s;
 }
 
 #button-list{
@@ -232,8 +249,11 @@ header #logo p{
     font-weight: 500;
     line-height: 22px;
     text-decoration: none;
+    opacity: 0;
     margin-top: 30px;
     margin-right: 55px;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 2s;
 }
 
 #button-list img{
@@ -245,11 +265,14 @@ header #logo p{
     padding: 15px;
     justify-content: center;
     align-items: center;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
     background: var(--gray-6, #F2F2F2);
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
 }
 
-#button-list p{
+#button-list .slide{
     color: var(--gray-1, #333);
     font-size: 18px;
     font-style: normal;
@@ -257,11 +280,17 @@ header #logo p{
     line-height: 30px;
     margin-top: 51px;
     margin-left: 15px;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
 }
 
 
 .pictures{
    position: relative;
+   opacity: 0;
+   animation: slideleft 1s linear forwards;
+   animation-delay: 2s;
 }
 
 .pictures .dice{
@@ -274,7 +303,7 @@ header #logo p{
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: linear;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 
 @keyframes spin{
@@ -289,6 +318,9 @@ header #logo p{
     position: absolute;
     right:29px;
     bottom:-70px;
+    animation: slideleft 1s linear forwards;
+    animation-delay:4s;
+    opacity: 0;
 }
 
 .pictures .curve{
@@ -311,7 +343,7 @@ header #logo p{
 
 .pictures .rectangle7{
     position: absolute;
-    left:350px;
+    left:370px;
     top:400px;
     animation-name: spin;
     animation-iteration-count: infinite;
@@ -497,6 +529,9 @@ main #serve #center p{
     letter-spacing: 3px;
     margin-left: 630px;
     margin-top: 132px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 5s;
 }
 
 main #serve #center h2{
@@ -511,6 +546,9 @@ main #serve #center h2{
     line-height: 60px;
     margin-left: 454px;
     margin-top: 20px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 6s;
 }
 
 .ten{
@@ -633,6 +671,9 @@ main #serve #delivery .third p{
     font-weight: 600;
     line-height: 22.4px;
     letter-spacing: 3px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 8s;
 }
 
 #menu .menu-text{
@@ -648,6 +689,9 @@ main #serve #delivery .third p{
     font-weight: 700;
     line-height: 60px;
     margin-top: 20px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 9s;
 }
 
 .left{
@@ -906,54 +950,83 @@ main #serve #delivery .third p{
 .rectangle4{
     width: 488px;
     height: 461px;
+    animation-name: spin;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 2s;
 }
 
 .chef{
     position: absolute;
     right:-75px;
     bottom:57px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 3s;
 }
 
 .ginger{
     position: absolute;
     right:410px;
     top:50px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 3;
 }
 
 .down{
     position: absolute;
     right:370px;
     bottom:560px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .up{
     position: absolute;
     right:400px;
-    bottom:605px
+    bottom:605px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .pepper1{
     position: absolute;
     top:251px;
     right:20px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .pepper2{
     position: absolute;
     top:290px;
     right:39px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .leaf1{
     position: absolute;
     bottom:550px;
-    right:-30px
+    right:-30px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .leaf2{
     position: absolute;
     bottom: 600px;
     right:50px;
+    opacity: 0;
+    animation: slideleft 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .left-part .rectangle{
@@ -1045,6 +1118,9 @@ main #serve #delivery .third p{
     line-height: 22px;
     letter-spacing: 3px;
     margin-top: 292px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 5s;
 }
 
 .right-part .below{
@@ -1056,6 +1132,9 @@ main #serve #delivery .third p{
     font-weight: 700;
     line-height: 60px;
     margin-top: 12px;
+    opacity: 0;
+    animation: slideleft 1.5s linear forwards;
+    animation-delay: 6s;
 }
 
 .right-part p{
@@ -1066,11 +1145,17 @@ main #serve #delivery .third p{
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 7.5s;
 }
 
 .right-part .profile{
     display: flex;
     margin-top:31px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 8.5s;
 }
 
 .profile .theresa{
@@ -1104,6 +1189,9 @@ main #serve #delivery .third p{
 .right-part .stars{
     display: flex;
     gap:16px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 9s;
 }
 
 .stars img{
@@ -1142,6 +1230,9 @@ main #serve #delivery .third p{
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 3px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 4s;
 }
 
 
@@ -1155,6 +1246,9 @@ main #serve #delivery .third p{
     font-weight: 700;
     line-height: 60px;
     margin-top: 25px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 5s;
 }
 
 
@@ -1168,6 +1262,9 @@ main #serve #delivery .third p{
     font-weight: 500;
     line-height: 30px;
     margin-top: 10px;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 6s;
 }
 
 #download-app .left-side .cta{
@@ -1191,6 +1288,9 @@ main #serve #delivery .third p{
     font-weight: 500;
     line-height: 22px;
     text-decoration: none;
+    opacity: 0;
+    animation: slideleft 1s linear forwards;
+    animation-delay: 7s;
 }
 
 #download-app .left-side .cta .avatar img{
@@ -1201,8 +1301,21 @@ main #serve #delivery .third p{
     position: absolute;
     bottom:520px;
     left:539px;
+    animation-name: rotate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-timing-function: ease-out;
+    animation-duration: 4s;
 }
 
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 #download-app .left-side .flame{
     position: absolute;
@@ -1214,6 +1327,11 @@ main #serve #delivery .third p{
     position: absolute;
     bottom:730px;
     left:530px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 4s;
 }
 
 #download-app .left-side .rectangle18{
@@ -1584,8 +1702,9 @@ footer .footer-base .base{
 
 @media screen and (max-width:1400px){
     html{
-        height:100%;
+        height:100vh;
         width:1400px;
         overflow-x: hidden;
         font-family: 'Poppins'
     }
+}
